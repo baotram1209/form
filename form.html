@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" method="post">
+        <p>
+            <label for="name">Prénom</label>
+            <input type="text" name="pr&eacutenom" id="name" pattern="[A-Za-z]{32}" >          
+        </p>
+
+        <p>
+            <label for="last-name">Nom</label>
+            <input type="text" name="last-name" id="last-name">            
+        </p>
+
+        <p>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">            
+        </p>
+
+        <p>
+        <legend>Sexe</legend>
+
+        <label for="male">
+            <input type="radio" name="sex" id="male" value="M"> Male
+        </label>
+
+        <label for="female">
+            <input type="radio" name="sex" id="female" value="F"> Female
+        </label>
+        </p>
+
+        <p>
+        <label for="mail">Adresse Mail</label>
+        <input type="email" name="email" id="mail" placeholder="name@domain.com">
+        </p>
+
+        <p>
+            <label for="address">Adresse postale</label>
+            <input type="text" name="address" id="address">
+        </p>
+
+        <p>
+            <label for="code-postal">Code postal</label>
+            <input type="number" name="code-postal" id="code-postal">
+        </p>
+        <!--control-->
+        
+        <p>
+            <label for="ville">Ville</label>
+            <select name="ville" id="ville">
+                <option value="paris">Paris</option>
+                <option value="lille">Lille</option>
+                <!--add list -->
+            </select>
+        </p>
+
+        <p>
+            <label for="job">Métier exercé</label>
+            <input type="text" name="job" id="job">
+        </p>
+
+        <p>
+            <label for="nationality">Nationalité</label>
+            <select name="nationality" id="nationality">
+                <option value="anglais">anglais</option>
+                <option value="français">français</option>
+                <!--add list -->
+            </select>
+        </p> 
+
+        <p>
+            <label for="dob">Date de naissance</label>
+            <input type="date"name="dob" id="dob" required pattern="\d{4}-\d{2}-\d{2}">
+            <span class="validity"></span>
+        </p>
+
+        <p>
+            <label for="country-of-birth">Pays de naissance</label>
+            <select name="country" id="country-of-birth">
+                <option value="England">England</option>
+                <option value="France">France</option>
+                <!--add list -->
+            </select>
+        <p>
+
+        <p>
+            <label for="secu">Numéro de sécurité social</label>
+            <input type="number" name="secu" id="secu">
+        </p>
+                    <!--control-->
+
+        <p>
+            <label for="passport">Numéro de passeport</label>
+            <input type="number" name="passport" id="passport">
+        </p>
+        <!--control-->
+
+        <p>
+            <label for="date-passport">Date de délivrance du passeport</label>
+            <input type="date" name="date-passport" id="date-passport" required pattern="\d{4}-\d{2}-\d{2}">
+            <span class="validity"></span>
+        </p>
+
+        <p>
+            <label for="validité-passeport">Date de validité du passeport</label>
+            <input type="date" name="validité-passeport" id="validité-passeport" required pattern="\d{4}-\d{2}-\d{2}">
+            <span class="validity"></span>
+        </p>
+
+        <p>
+            <input type="submit" name="submit" value="Send">
+        </p>
+
+
+        
+
+
+
+      
+        
+        
+
+        
+
+        
+
+
+
+
+
+        
+    </form>
+</body>
+</html>
