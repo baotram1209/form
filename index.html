@@ -8,21 +8,21 @@
 </head>
 <body>
     <h1>Formulaire d’inscription</h1>
-    <p>Les champs marqués d'un * sont requis.</p>
+    <p>Les champs marqués d'un * sont obligatoires.</p>
     <form>
         <p>
-            <label for="name">Prénom</label>
+            <label for="name">Prénom *</label>
             <input type="text" name="pr&eacutenom" id="name" pattern="[A-Za-z]+" required>          
         </p>
 
         <p>
-            <label for="last-name">Nom</label>
+            <label for="last-name">Nom *</label>
             <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]+" required>            
         </p>
 
         <p>
             <label for="age">Age</label>
-            <input type="number" name="age" id="age" pattern="[0,9]">            
+            <input type="number" name="age" id="age">            
         </p>
 
         <p>Sexe</p>
