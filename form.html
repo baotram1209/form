@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulaire d’inscription</h1>
-    <form action="/login" method="post">
+    <form method="post">
         <p>
             <label for="name">Prénom</label>
             <input type="text" name="pr&eacutenom" id="name" pattern="[A-Za-z]+" >          
@@ -21,7 +21,7 @@
 
         <p>
             <label for="age">Age</label>
-            <input type="number" name="age" id="age">            
+            <input type="number" name="age" id="age" pattern="[0,9]">            
         </p>
 
         <p>Sexe</p>
@@ -51,30 +51,36 @@
 
         <p>
             <label for="code-postal">Code postal</label>
-            <input type="text" name="code-postal" id="code-postal" pattern="[0-9]+">
+            <input type="text" name="code-postal" id="code-postal" pattern="[0-9]{5,5}">
         </p>
         
         
         <p>
             <label for="ville">Ville</label>
             <select name="ville" id="ville">
+                <option value="arras">Arras</option>
                 <option value="paris">Paris</option>
                 <option value="lille">Lille</option>
-                <!--add list -->
             </select>
         </p>
 
         <p>
             <label for="job">Métier exercé</label>
-            <input type="text" name="job" id="job" pattern="[A-Za-z]+">
+            <select name="job" id="job">
+                <option value="">None</option>
+                <option value="acheteur industriel">Acheteur industriel</option>
+                <option value="boulanger">Boulanger</option>
+                <option value="chef de rayon">Chef de rayon</option>  
+            </select>
         </p>
 
         <p>
             <label for="nationality">Nationalité</label>
             <select name="nationality" id="nationality">
-                <option value="anglais">anglais</option>
-                <option value="français">français</option>
-                <!--add list -->
+                <option value="anglais">anglais.e</option>
+                <option value="français" selected>français.e</option>
+                <option value="vietnamien">vietnamien.e</option>
+              
             </select>
         </p> 
 
@@ -87,8 +93,8 @@
         <p>
             <label for="country-of-birth">Pays de naissance</label>
             <select name="country" id="country-of-birth">
-                <option value="England">England</option>
                 <option value="France">France</option>
+                <option value="England">Angleterre</option>
                 <!--add list -->
             </select>
         <p>
