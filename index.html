@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire d'inscription</title>
 </head>
 <body>
     <h1>Formulaire d’inscription</h1>
-    <form method="post">
+    <p>Les champs marqués d'un * sont requis.</p>
+    <form>
         <p>
             <label for="name">Prénom</label>
-            <input type="text" name="pr&eacutenom" id="name" pattern="[A-Za-z]+" >          
+            <input type="text" name="pr&eacutenom" id="name" pattern="[A-Za-z]+" required>          
         </p>
 
         <p>
             <label for="last-name">Nom</label>
-            <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]+">            
+            <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]+" required>            
         </p>
 
         <p>
